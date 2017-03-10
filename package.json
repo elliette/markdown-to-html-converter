@@ -1,0 +1,25 @@
+{
+  "name": "markdown-html",
+  "version": "1.0.0",
+  "description": "A simple Markdown to HTML converter. ",
+  "main": "convert-to-HTML.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliette/markdown-to-html.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "converter",
+    "parser"
+  ],
+  "author": "Elliott May Brooks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elliette/markdown-to-html/issues"
+  },
+  "homepage": "https://github.com/elliette/markdown-to-html#readme"
+}
