@@ -19,7 +19,9 @@
   "author": "Elliott May Brooks",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elliette/markdown-to-html/issues"
+    "url": "https://github.com/elliette/markdown-to-html-converter/issues"
   },
-  "homepage": "https://github.com/elliette/markdown-to-html#readme"
+  "homepage": "https://github.com/elliette/markdown-to-html-converter#readme"
 }
+
+
