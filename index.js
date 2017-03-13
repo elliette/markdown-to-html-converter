@@ -1,11 +1,11 @@
-import findBlockQuotes from './blockquotes'; 
-import setCodeType from './code-blocks'; 
-import {getParagraphs, convertToObject} from './deassembling'; 
-import convertText from './inline-elements'; 
-import findLineBreaks from './line-breaks'; 
-import convertLinks from './links'; 
-import {findListIndexes, markListItems, findOrderedListItems} from './lists'; 
-import {addContainerDivs, combineText} from './reassembling'; 
+import findBlockQuotes from '.converter-utilities/blockquotes'; 
+import setCodeType from '.converter-utilities/code-blocks'; 
+import {getParagraphs, convertToObject} from '.converter-utilities/deassembling'; 
+import convertText from '.converter-utilities/inline-elements'; 
+import findLineBreaks from '.converter-utilities/line-breaks'; 
+import convertLinks from '.converter-utilities/links'; 
+import {findListIndexes, markListItems, findOrderedListItems} from '.converter-utilities/lists'; 
+import {addContainerDivs, combineText} from '.converter-utilities/reassembling'; 
 
 export default function convertToHTML(markdownText){
 
