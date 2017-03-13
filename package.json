@@ -1,7 +1,7 @@
 {
-  "name": "markdown-html",
+  "name": "markdown-to-html-converter",
   "version": "1.0.0",
-  "description": "A simple Markdown to HTML converter. ",
+  "description": "A simple Markdown to HTML converter.",
   "main": "index.js",
   "scripts": {
     "test": "test"
