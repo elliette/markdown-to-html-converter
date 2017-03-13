@@ -2,13 +2,13 @@
   "name": "markdown-html",
   "version": "1.0.0",
   "description": "A simple Markdown to HTML converter. ",
-  "main": "convert-to-HTML.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elliette/markdown-to-html.git"
+    "url": "git+https://github.com/elliette/markdown-to-html-converter.git"
   },
   "keywords": [
     "markdown",
