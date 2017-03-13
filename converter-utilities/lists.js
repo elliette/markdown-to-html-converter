@@ -1,6 +1,6 @@
 /* This is where we now try to find unordered lists */
 
-function findListIndexes(objectArray) {
+export function findListIndexes(objectArray) {
 	var indexArr = [];
 	objectArray.map((obj, i) => {
 		var check = obj.content.slice(0, 2);
@@ -12,7 +12,7 @@ function findListIndexes(objectArray) {
 	return indexArr;
 }
 
-function markListItems(objectArr, indexArr) {
+export function markListItems(objectArr, indexArr) {
 	return objectArr.map((item, i) => {
 		if (i === indexArr[0]) {
 			indexArr.shift();
@@ -28,7 +28,7 @@ function markListItems(objectArr, indexArr) {
 
 /* This is where we now find ordered lists */
 
-function findOrderedListItems(objectArr) {
+export function findOrderedListItems(objectArr) {
 	var inList = false;
 	var listNum = 1;
 	return objectArr.map((item, index) => {

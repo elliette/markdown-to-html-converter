@@ -11,7 +11,7 @@ export function addContainerDivs(objectArr) {
 
 		if (parentOptions[0].includes(item.type)) {
 
-			parentIndex = parentOptions[0].indexOf(item.type); // 0 for 'ol li', 1 for 'ul li', and 2 for 'code'; 
+			let parentIndex = parentOptions[0].indexOf(item.type); // 0 for 'ol li', 1 for 'ul li', and 2 for 'code'; 
 
 			if (!objectArr[index - 1] || objectArr[index - 1].type !== parentOptions[0][parentIndex]) {
 
@@ -60,14 +60,14 @@ export function combineText(objectArr) {
 
 				return '<pre><code>'
 			} else {
-				return '</pre></code>'
+				return '</code></pre>'
 			}
 
 		} else if (item.type === 'ol' || item.type === 'ul') {
 
-			if (objectArr[index + 1] && objectArr[index + 1].type === 'li') {
-
+			if (objectArr[index + 1] && objectArr[index + 1].type === 'ol li' || objectArr[index + 1].type === 'ul li') {
 				return item.type === 'ol' ? '<ol>' : '<ul>';
+
 			} else {
 				return item.type === 'ol' ? '</ol>' : '</ul>';
 			}

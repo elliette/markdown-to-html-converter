@@ -4,10 +4,10 @@ import {getParagraphs, convertToObject} from './deassembling';
 import convertText from './inline-elements'; 
 import findLineBreaks from './line-breaks'; 
 import convertLinks from './links'; 
-import {addContainerDivs, combineText} from '.reassembling'; 
-import convertSpecialCharacters from './special-characters'; 
+import {findListIndexes, markListItems, findOrderedListItems} from './lists'; 
+import {addContainerDivs, combineText} from './reassembling'; 
 
-function convertToHTML(markdownText) => {
+export default function convertToHTML(markdownText){
 
 	let paragraphs = getParagraphs(markdownText); 
 
@@ -21,7 +21,6 @@ function convertToHTML(markdownText) => {
 	paragraphObjects = markListItems(paragraphObjects, indexes);
 	paragraphObjects = findOrderedListItems(paragraphObjects);
 
-	paragraphObjects = convertSpecialCharacters(paragraphObjects);
 	paragraphObjects = convertLinks(paragraphObjects);
 
 	paragraphObjects = paragraphObjects.map(paragraph => {

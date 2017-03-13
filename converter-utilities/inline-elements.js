@@ -11,7 +11,7 @@ function splitUpParagraph(segment, resultStr, stack, tokens, tokenIndex) {
 }
 
 export default function convertText(str) {
-
+	str = " " + str + " "; 
 	var resultStr = str;
 
 	const tokens =
@@ -69,6 +69,6 @@ export default function convertText(str) {
 			}
 		}
 	}
-	return resultStr;
+	return resultStr.trim();
 }
 
