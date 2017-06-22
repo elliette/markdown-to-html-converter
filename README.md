@@ -13,7 +13,7 @@ npm install markdown-to-html-converter
 
 ### Import
 ```
-import convertToHTML from "markdown-to-html-converter"
+import convertToHTML from 'markdown-to-html-converter'
 ```
 
 ### Use
